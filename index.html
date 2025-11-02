@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ahmed's Blog</h1>
+        <p>Thoughts, stories, and ideas</p>
+    </header>
+    <div id="blogPage">
+        <div id="searchFilters">
+            <div id="searchBar">
+                <input type="text" id="search-input" placeholder="Search blog posts by title...">
+            </div>
+            <nav id="category-filter">
+                    <button data-category="all" class="active">All</button>
+                    <button data-category="tech">Tech</button>
+                    <button data-category="travel">Travel</button>
+                    <button data-category="food">Food</button>
+            </nav>
+        </div>
+
+        <main id="blog-posts"></main>
+
+        <div id="pagination"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

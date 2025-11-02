@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: "Meow Script", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-family: "Inter", sans-serif;
+}
+small{
+    font-family: "Inter", sans-serif;
+}
+body{
+    margin: 0px;
+}
+header p{
+    text-align: center;
+}
+header{
+    padding: 1px;
+    background-image:url('../img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#blogPage{
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+}
+#search-input{
+    margin: auto;
+    padding: 10px;
+    width: 96%;
+    border: solid 1px #ababab;
+    border-radius: 50px;
+    box-shadow: -11px 10px 15px -17px rgba(0,0,0,1);
+}
+#searchFilters{
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#category-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    padding: 10px;
+}
+#category-filter button{
+    background-color: white;
+    border: solid 1px #ababab;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    box-shadow: -11px 10px 15px -17px rgba(0,0,0,1);
+}
+#category-filter button:hover{
+    background-color: rgb(197, 197, 197);
+    border-color: black;
+}
+#category-filter button.active{
+    background-color: #156bb8;
+    color: white;
+    border-color: #192c48
+}
+#blog-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post-card{
+    background-color: #efefef;
+    padding: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.post-card img{
+    border-radius: 10px;
+}
+.post-card:hover{
+    background-color: #c1e2ff;
+    box-shadow: inset 0 0 0 1px #156bb8;
+}
+.post-card h2{
+    font-family: "Inter",sans-serif;
+}
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+    gap: 5px;
+}
+button{
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: white;
+    border: solid 1px #ababab;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    box-shadow: -11px 10px 15px -17px rgba(0,0,0,1);
+    font-family: "Inter",sans-serif;
+}
+button:hover{
+    background-color: rgb(197, 197, 197);
+    border-color: black;
+}
+button.active{
+    background-color: #156bb8;
+    color: white;
+    border-color: #192c48
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+    #blogPage {
+        width: 85%;
+        padding: 10px;
+    }
+            
+    #category-filter button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+            
+    .post-card {
+        padding: 12px;
+    }
+}
